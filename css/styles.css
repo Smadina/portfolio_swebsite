@@ -36,6 +36,11 @@ header,
   justify-content: space-between;
 }
 
+.left-side {
+  width: 30px;
+  height: 30px;
+}
+
 .right-side ul li {
   list-style: none;
   display: inline-block;
@@ -127,6 +132,16 @@ span.menu-nav-current {
 
 .project-preview-right {
   padding: 40px 100px 40px 0px;
+}
+
+.project-preview-left {
+  transition: transform .3s;
+}
+
+.project-preview-left:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .title-text  {
