@@ -36,7 +36,15 @@ header,
   justify-content: space-between;
 }
 
-.left-side {
+.img-logo {
+  background-image: url("../img/home-page/my-logo-gold.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.img-logo:hover,
+.img-logo:active {
+  background-image: url("../img/home-page/my-logo-black.svg");
   width: 30px;
   height: 30px;
 }
