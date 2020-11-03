@@ -37,6 +37,7 @@ header,
 }
 
 .img-logo {
+  display: block;
   background-image: url("../img/home-page/my-logo-gold.svg");
   width: 30px;
   height: 30px;
@@ -293,4 +294,56 @@ footer {
   letter-spacing: 0.5px;
   text-align: right;
   text-transform: uppercase;
+}
+
+/* Responsive Mode */
+@media only screen and (max-width: 1024px) {
+  header,
+  .intro-left,
+  .projects-container,
+  .footer-container,
+  .about-container,
+  .skills-container {
+    padding: 0 36px 0 36px;
+  }
+  .my-work-text {
+    margin-left: 0px;
+  }
+  .hero-container{
+    padding: 100px 0 100px 0
+  }
+  .project-preview {
+    flex-direction: column;
+    justify-content: center;
+    height: 680px;
+    margin-bottom: 80px;
+  }
+  .project-preview-right {
+    padding: 0 60px 0 60px;
+  }
+  .my-role-text {
+    margin: 20px 0 30px 0
+  }
+  .footer-container {
+    flex-direction: column;
+
+  }
+  .info-right > p {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1440px){
+  header,
+  .hero-container,
+  .projects-container,
+  .footer-container,
+  .about-container,
+  .skills-container {
+    margin: 0px auto;
+    max-width: 1100px;
+    padding: 12px;
+  }
+
+
 }
