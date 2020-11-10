@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/ceu2keb.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -12,27 +13,32 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon_io/site.webmanifest">
   <script src="js/scripts.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://kit.fontawesome.com/4de4e9216c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!--Navigation Section Starts -->
   <header>
-      <nav class="nav-wrapper">
+    <div class="navtoggle" id="myNavtoggle">
+    <div class="nav-wrapper">
+
         <div class="img-wrapper">
           <a href="index.html">
             <div class="img-logo"> </div>
           </a>
         </div>
-        <div class="right-side">
+        <nav>
           <ul>
             <li><a href="index.html" target="_self"> <span class="nav-link-current">Portfolio</span></a></li>
             <li><a href="about.html" target="_self"><span class="nav-link">About</span></a></li>
             <li><a href="#contact"><span class="nav-link">Contact</span></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars fa-fw fa-lg"></i></a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
+    </div>
   </header>
 
 
@@ -56,7 +62,9 @@
     </div>
     <div class="project-preview">
       <div class="project-preview-left">
-        <a href="sprouts.html"><img src="img/home-page/sprouts@2x.png" alt="Sprouts iOS App" style="width:620px;height:auto;"></a>
+        <a href="sprouts.html">
+          <div><img src="img/home-page/sprouts@2x.png" alt="Sprouts iOS App"></div>
+          </a>
       </div>
       <div class="project-preview-right">
         <h2 class="title-text">Sprouts </h2>
@@ -72,7 +80,7 @@
 
     <div class="project-preview">
       <div class="project-preview-left">
-        <img src="img/home-page/food-love@2x.png" alt="Sprouts iOS App" style="width:620px;height:auto;">
+        <div><img src="img/home-page/food-love@2x.png" alt="FoodLove Mobile App"></div>
       </div>
       <div class="project-preview-right">
         <h2 class="title-text">FoodLove </h2>
@@ -334,8 +342,6 @@
 
 
 
-
-
   <!--Footer Section Starts -->
   <footer id="contact">
     <div class="footer-container">
@@ -344,7 +350,8 @@
           Thanks for stopping by!<br>Let's connect <sub style="font-size:22px;"> &#9759; </sub> <br>
         </p> <br>
         <p>
-          <a class="nav-link" href="mailto:madinastarks@gmail.com?subject=To%20Madina%20Starks">madinastarks@gmail.com</a><br>
+          <a class="nav-link" href="mailto:madinastarks@gmail.com?subject=To%20Madina%20Starks">madinastarks@gmail.com</a>
+          <br>
           <a class="nav-link" href="files/madina-starks-resume.pdf" target="_blank">download my resume</a>
         </p>
       </div>
