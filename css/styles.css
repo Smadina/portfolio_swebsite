@@ -514,14 +514,6 @@ footer {
   .navtoggle li:not(:last-child) {
   display: none;
   }
-  .navtoggle.responsive {
-
-    }
-.navtoggle.responsive {
-
-    right: 0;
-    top: 0;
-}
 
   nav > ul > li > a {
     padding: 0;
