@@ -61,16 +61,11 @@ header,
   display: none;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
-
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
 
 
-nav > ul > li {
+
+
+nav ul li {
   display: inline-block;
   list-style: none;
   float: left;
@@ -367,12 +362,6 @@ footer {
   text-align: right;
   text-transform: uppercase;
 }
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle.responsive li  {
-  display: block;
-}
 
 /* SVG Animation */
 .project-svg {
@@ -511,18 +500,46 @@ footer {
   .footer-container {
     padding: 0 36px 0 36px;
   }
-  .navtoggle li:not(:last-child) {
-  display: none;
+  .nav-wrapper {
+  
   }
-
+  nav ul li {
+    float: right;
+    line-height: 20px;
+  }
   nav > ul > li > a {
     padding: 0;
   }
-
   .icon {
     display: block !important;
     color: #121517;
   }
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle a.icon {
+    float: right;
+    display: block;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    float: none;
+    line-height: 20px;
+  }
+ .navtoggle.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+  .navtoggle.responsive ul {
+  position: relative;
+  }
+
+
+
+
+
+
 
 
   .intro-left h1 {
