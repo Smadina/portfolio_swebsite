@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior : smooth;
+}
+
 img {
   width: 100%;
 }
@@ -37,8 +41,6 @@ header,
   justify-content: space-between;
 }
 
-
-
 .img-wrapper a {
   display: block;
   padding: 20px 20px 20px 0;
@@ -56,14 +58,12 @@ header,
   width: 30px;
   height: 30px;
 }
-
-.icon {
+.navtoggle {
+  overflow: hidden;
+}
+.navtoggle .icon {
   display: none;
 }
-
-
-
-
 
 nav ul li {
   display: inline-block;
@@ -498,50 +498,19 @@ footer {
   .about-container,
   .skills-container,
   .footer-container {
-    padding: 0 36px 0 36px;
-  }
-  .nav-wrapper {
-  
+  padding: 0 36px 0 36px;
   }
   nav ul li {
-    float: right;
-    line-height: 20px;
-  }
-  nav > ul > li > a {
-    padding: 0;
-  }
-  .icon {
-    display: block !important;
-    color: #121517;
+    display: block;
+    line-height: 10px;
   }
   .navtoggle li:not(:last-child) {
     display: none;
   }
-  .navtoggle a.icon {
-    float: right;
+  .navtoggle .icon {
     display: block;
+    color: #121517;
   }
-  .navtoggle.responsive li  {
-    display: block;
-    float: none;
-    line-height: 20px;
-  }
- .navtoggle.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-  }
-  .navtoggle.responsive ul {
-  position: relative;
-  }
-
-
-
-
-
-
-
-
   .intro-left h1 {
     font-size: 42px;
   }
@@ -617,6 +586,8 @@ footer {
   }
 }
 
+
+
 @media only screen and (max-width: 789px)  {
   header,
   .intro-left,
@@ -625,8 +596,6 @@ footer {
   .footer-container {
     padding: 0 36px 0 36px;
   }
-
-
   .projects-container{
     width: 90%;
   }
