@@ -36,15 +36,9 @@ header,
 .nav-wrapper {
   padding-top: 30px;
   height: 80px;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.img-wrapper a {
-  display: block;
-  padding: 20px 20px 20px 0;
-}
+
 
 .img-logo {
   background-image: url("../img/home-page/my-logo-gold.svg");
@@ -58,23 +52,57 @@ header,
   width: 30px;
   height: 30px;
 }
-.navtoggle {
-  overflow: hidden;
+
+nav {
+  display: inline-block;
+  width: 100%;
 }
-.navtoggle .icon {
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 0 0 35px;
+}
+
+.navtoggle li:not(:last-child) {
   display: none;
 }
 
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  float: left;
-  line-height: 60px;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
-nav ul li a {
+/* Hamburger menu */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #121517;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
   display: block;
-  padding: 0 0 0 35px;
+  padding: 10px 0;
+  border-top: 0.5px solid #BB9F06;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav span {
@@ -128,7 +156,6 @@ background-color: rgba(187, 159, 6, 0.2);
 /* Hero Section Style */
 .hero-container {
   padding: 230px 0 250px 0;
-  display: flex;
 }
 
 .intro-left h1 {
@@ -491,25 +518,19 @@ footer {
 }
 
 /* Responsive Mode */
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 641px) {
   header,
   .intro-left,
   .about-container,
   .skills-container,
   .footer-container {
-  padding: 0 36px 0 36px;
+    padding: 0 36px 0 36px;
   }
-  nav ul li {
-    display: block;
-    line-height: 10px;
+  nav span{
+    border-bottom: none;
   }
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-  .navtoggle .icon {
-    display: block;
-    color: #121517;
+  .projects-container{
+    width: 90%;
   }
   .intro-left h1 {
     font-size: 42px;
@@ -517,8 +538,126 @@ footer {
   .my-work-text {
     display: none;
   }
-  .hero-container{
+  .hero-container {
     padding: 100px 0 100px 0;
+  }
+  .projects-container {
+    width: 100%;
+  }
+  .project-preview {
+    flex-direction: column;
+    justify-content: center;
+    height: 620px;
+    margin-bottom: 80px;
+    border-radius: 0;
+  }
+  .project-preview-left > a > div,
+  .project-preview-left > div {
+    width:460px;
+    height: auto;
+  }
+  .project-preview-right,
+  .animation-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .title-text {
+    font-size: 28px;
+  }
+  .description-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .my-role-text {
+    margin: 20px 0 30px 0;
+    font-size: 14px;
+  }
+  .animation-text p {
+    font-size: 14px;
+  }
+  .footer-container {
+    display: block;
+    margin-top: 200px;
+  }
+  .info-right > p {
+    text-align: left;
+  }
+  .info-left > p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .info-left > p > a {
+    font-size: 16px;
+    line-height: 60px;
+  }
+  .info-right {
+    margin-top: 30px;
+  }
+  .info-left {
+    padding-top: 60px;
+  }
+  .about-container {
+    margin-top: 60px;
+    display:block;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .skills-container {
+    display: inline-block;
+    margin-top: 80px;
+  }
+  .about-right > p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .about-right-list ul {
+    font-size: 16px;
+  }
+  .about-right,
+  .about-right-list {
+    flex: 1;
+    margin-left: 0px;
+  }
+
+}
+@media only screen and (min-width: 641px) {
+
+  header {
+   text-align: unset;
+   padding: 20px 0 13px;
+ }
+
+ nav {
+   width: auto;
+   float: right;
+   margin-top: 4px;
+ }
+
+ nav > ul > li {
+   display: inline-block;
+   position: relative;
+ }
+
+ .navtoggle li:not(:last-child) {
+   display: inline-block;
+ }
+
+ .navtoggle li:last-child {
+   display: none;
+ }
+
+
+/*
+  .intro-left h1 {
+    font-size: 42px;
+  }
+  .my-work-text {
+    display: none;
+  }
+  .hero-container{
+
   }
   .projects-container {
     width: 100%;
@@ -632,4 +771,4 @@ footer {
   .info-left {
     padding-top: 60px;
   }
-}
+}*/
