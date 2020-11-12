@@ -19,7 +19,7 @@ body {
 }
 
 .nav-wrapper {
-  padding: 0; 
+  padding: 0;
 }
 
 
@@ -237,6 +237,7 @@ padding: 6px 3px 3px 3px;
 color: #121517;
 }
 
+
 /* Footer Section Style */
 footer {
   display: block;
@@ -246,8 +247,10 @@ footer {
   margin-top: 200px;
 }
 
+
 /* Responsive Mode */
 @media only screen and (max-width: 1024px) {
+
   .cover > img {
     width: 90%;
   }

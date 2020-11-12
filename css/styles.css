@@ -55,8 +55,6 @@ header,
   padding: 30px 0 30px 0;
 }
 
-
-
 .img-logo {
   background-image: url("../img/home-page/my-logo-gold.svg");
   width: 30px;
@@ -100,6 +98,7 @@ nav > ul > li > a {
   position: relative;
 }
 
+
 /* Hamburger menu */
 .navtoggle li .icon {
   position: absolute;
@@ -112,6 +111,7 @@ nav > ul > li > a {
 .navtoggle.responsive nav {
   padding: 32px 0 0;
 }
+
 .navtoggle.responsive ul {
   margin-top: 30px;
 }
@@ -412,6 +412,7 @@ footer {
   text-transform: uppercase;
 }
 
+
 /* SVG Animation */
 .project-svg {
   border-radius: 6px;
@@ -548,29 +549,41 @@ footer {
   .footer-container {
     padding: 0 36px 0 36px;
   }
+
   header {
     background-color: #E0E0E0;
  }
-  nav span{
+
+ .scrollup {
+   width: 36px;
+   height: 36px;
+   right: 50px;
+ }
+
+  nav span {
     border-bottom: none;
   }
+
   .projects-container{
     width: 90%;
   }
+
   .intro-left h1 {
     font-size: 42px;
   }
+
   .my-work-text {
     display: none;
   }
+
   .hero-container {
     padding: 80px 0 100px 0;
   }
 
-
   .projects-container {
     width: 100%;
   }
+
   .project-preview {
     flex-direction: column;
     justify-content: center;
@@ -578,86 +591,107 @@ footer {
     margin-bottom: 80px;
     border-radius: 0;
   }
+
   .project-preview-left > a > div,
   .project-preview-left > div {
     width:420px;
     height: auto;
   }
+
   .project-preview-right,
   .animation-text {
     width: 80%;
     margin: 0 auto;
   }
+
   .title-text {
     font-size: 28px;
   }
+
   .description-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
   }
+
   .my-role-text {
     margin: 20px 0 30px 0;
     font-size: 14px;
   }
+
   .animation-text p {
     font-size: 14px;
   }
+
   .footer-container {
     display: block;
     margin-top: 200px;
   }
+
   .info-right > p {
     text-align: left;
   }
+
   .info-left > p {
     font-size: 20px;
     line-height: 32px;
   }
+
   .info-left > p > a {
     font-size: 16px;
     line-height: 60px;
   }
+
   .info-right {
     margin-top: 30px;
   }
+
   .info-left {
     padding-top: 60px;
   }
+
   .about-container {
     margin-top: 60px;
     display:block;
   }
+
   .about-left {
     width: 100%;
   }
+
   .about-left > p,
   .about-wave {
     font-size: 28px;
   }
+
   .skills-container {
     display: inline-block;
     margin-top: 80px;
   }
+
   .about-right > p,
   .about-right > p > a {
     font-size: 16px;
     line-height: 32px;
   }
+
   .about-left > img{
     width: 180px;
     height: auto;
   }
+
   .about-right-list ul {
     font-size: 16px;
   }
+
   .about-right,
   .about-right-list {
     flex: 1;
     margin-left: 0px;
   }
-
 }
+
+
 @media only screen and (min-width: 641px) {
 
   header {
@@ -683,128 +717,3 @@ footer {
  .navtoggle li:last-child {
    display: none;
  }
-
-
-/*
-  .intro-left h1 {
-    font-size: 42px;
-  }
-  .my-work-text {
-    display: none;
-  }
-  .hero-container{
-
-  }
-  .projects-container {
-    width: 100%;
-  }
-  .project-preview {
-    flex-direction: column;
-    justify-content: center;
-    height: 620px;
-    margin-bottom: 80px;
-    border-radius: 0;
-  }
-  .project-preview-left > a > div,
-  .project-preview-left > div {
-    width: 420px;
-    height: auto;
-  }
-  .title-text {
-    font-size: 28px;
-  }
-  .description-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-  }
-  .my-role-text {
-    margin: 20px 0 30px 0;
-    font-size: 14px;
-  }
-  .animation-text p {
-    font-size: 14px;
-  }
-  .footer-container {
-    display: block;
-    margin-top: 200px;
-  }
-  .info-right > p {
-    text-align: left;
-  }
-  .info-left > p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .info-left > p > a {
-    font-size: 16px;
-    line-height: 60px;
-  }
-  .info-right {
-    margin-top: 30px;
-  }
-  .info-left {
-    padding-top: 60px;
-  }
-  .about-container {
-    margin-top: 100px;
-    display:block;
-  }
-  .skills-container {
-    display: inline-block;
-    margin-top: 80px;
-  }
-  .about-right,
-  .about-right-list {
-    flex: 1;
-    margin-left: 0px;
-  }
-}
-
-
-
-@media only screen and (max-width: 789px)  {
-  header,
-  .intro-left,
-  .about-container,
-  .skills-container,
-  .footer-container {
-    padding: 0 36px 0 36px;
-  }
-  .projects-container{
-    width: 90%;
-  }
-  .project-preview {
-    flex-direction: column;
-    justify-content: center;
-    height: 620px;
-    margin-bottom: 80px;
-    border-radius: 0;
-  }
-  .my-work-text {
-    margin-left: 36px;;
-  }
-  .project-preview {
-    height: 700px;
-  }
-  .project-preview-right {
-    width: 80%;
-  }
-  .project-preview-left > a > div, .project-preview-left > div {
-    width: 550px;
-    height: auto;
-  }
-  .footer-container {
-    display: block;
-    margin-top: 200px;
-  }
-  .info-right > p {
-    text-align: left;
-  }
-  .info-right {
-    margin-top: 30px;
-  }
-  .info-left {
-    padding-top: 60px;
-  }
-}*/
