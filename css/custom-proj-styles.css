@@ -5,6 +5,7 @@
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.2px;
+    box-sizing: border-box;
 }
 
 img {
@@ -17,9 +18,14 @@ body {
   color: #121517;
 }
 
+.nav-wrapper {
+  padding: 0; 
+}
+
+
 /* Sprouts Project Section Style */
 .cover {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,6 +206,7 @@ body {
 .project-nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -100px;
 }
 
 .project-nav-right > p,
@@ -235,7 +242,7 @@ footer {
   display: block;
   background-color: #e9e9e9;
 }
-.footer-container {
+#footer-projects {
   margin-top: 200px;
 }
 

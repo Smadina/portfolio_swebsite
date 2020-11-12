@@ -22,6 +22,22 @@ body {
   color: #121517;
 }
 
+.scrollup {
+    width: 46px;
+    height: 46px;
+    position: fixed;
+    bottom: 60px;
+    right: 200px;
+    display: none;
+    text-indent: -9999px;
+    background: url("../img/home-page/up-button.svg") no-repeat;
+}
+
+.scrollup:hover {
+    background: url("../img/home-page/up-button-hover.svg") no-repeat;
+     opacity: 0.5;
+}
+
 header,
 .hero-container,
 .projects-container,
@@ -32,10 +48,11 @@ header,
   max-width: 1100px;
 }
 
+
+
 /* Navigation Section Style */
 .nav-wrapper {
-  padding-top: 30px;
-  height: 80px;
+  padding: 30px 0 30px 0;
 }
 
 
@@ -44,6 +61,7 @@ header,
   background-image: url("../img/home-page/my-logo-gold.svg");
   width: 30px;
   height: 30px;
+  position: absolute;
 }
 
 .img-logo:hover,
@@ -60,7 +78,7 @@ nav {
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
+  padding:  0;
 }
 
 nav > ul > li {
@@ -86,21 +104,25 @@ nav > ul > li > a {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #121517;
+  top: 6px;
+  font-size: 18px;
+  color: #5C5C5C;
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 32px 0 0;
+}
+.navtoggle.responsive ul {
+  margin-top: 30px;
 }
 
 .navtoggle.responsive li  {
   display: block;
-  padding: 10px 0;
-  border-top: 0.5px solid #BB9F06;
+  padding: 16px 0;
 }
-
+.navtoggle.responsive a {
+  padding: 0;
+}
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
@@ -526,6 +548,9 @@ footer {
   .footer-container {
     padding: 0 36px 0 36px;
   }
+  header {
+    background-color: #E0E0E0;
+ }
   nav span{
     border-bottom: none;
   }
@@ -539,8 +564,10 @@ footer {
     display: none;
   }
   .hero-container {
-    padding: 100px 0 100px 0;
+    padding: 80px 0 100px 0;
   }
+
+
   .projects-container {
     width: 100%;
   }
@@ -553,7 +580,7 @@ footer {
   }
   .project-preview-left > a > div,
   .project-preview-left > div {
-    width:460px;
+    width:420px;
     height: auto;
   }
   .project-preview-right,
@@ -604,13 +631,22 @@ footer {
   .about-left {
     width: 100%;
   }
+  .about-left > p,
+  .about-wave {
+    font-size: 28px;
+  }
   .skills-container {
     display: inline-block;
     margin-top: 80px;
   }
-  .about-right > p {
+  .about-right > p,
+  .about-right > p > a {
     font-size: 16px;
     line-height: 32px;
+  }
+  .about-left > img{
+    width: 180px;
+    height: auto;
   }
   .about-right-list ul {
     font-size: 16px;
