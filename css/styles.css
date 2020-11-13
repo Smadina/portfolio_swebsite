@@ -235,6 +235,16 @@ background-color: rgba(187, 159, 6, 0.2);
   color: #525252;
 }
 
+.my-work-text > p {
+  letter-spacing:0.3px;
+}
+
+.my-work-text > p > span {
+  font-size: 24px;
+  padding-left: 6px;
+  position: absolute;
+}
+
 .project-preview {
   display:flex;
   align-items: center;
@@ -309,8 +319,8 @@ background-color: rgba(187, 159, 6, 0.2);
   width: 35%;
 }
 
-.about-left > p,
-.about-wave {
+.about-left-text,
+.about-left-text span {
   font-family: 'roc-grotesk-wide', sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -541,24 +551,78 @@ footer {
 }
 
 /* Responsive Mode */
+@media screen and (max-width: 1220px), and (width: 641px) {
+  header,
+  .intro-left,
+  .about-container,
+  .skills-container {
+    padding: 0 36px 0 36px ! important;
+  }
+
+  .scrollup {
+    width: 36px;
+    height: 36px;
+    right: 50px;
+  }
+
+  .project-preview {
+    flex-direction: column;
+    height: 720px;
+    margin-bottom: 80px;
+  }
+  .projects-container{
+    width: 90%;
+  }
+
+  .my-work-text {
+    display: none;
+  }
+
+  .hero-container {
+    padding: 160px 0 160px 0;
+  }
+
+  .project-preview-right {
+    width: 80%;
+  }
+
+  .footer-container {
+    display: block;
+    margin-top: 100px;
+    padding: 0 36px 60px 36px;
+  }
+
+  .info-right > p {
+    text-align: left;
+  }
+
+  .info-right {
+    margin-top: 30px;
+  }
+
+  .info-left {
+    padding-top: 60px;
+  }
+}
+
+
 @media only screen and (max-width: 641px) {
   header,
   .intro-left,
   .about-container,
-  .skills-container,
-  .footer-container {
+  .skills-container {
     padding: 0 36px 0 36px;
   }
 
   header {
     background-color: #E0E0E0;
- }
+  }
 
  .scrollup {
    width: 36px;
    height: 36px;
    right: 50px;
- }
+  }
 
   nav span {
     border-bottom: none;
@@ -625,7 +689,8 @@ footer {
 
   .footer-container {
     display: block;
-    margin-top: 200px;
+    margin-top: 140px;
+    padding: 0 36px 60px 36px;
   }
 
   .info-right > p {
@@ -692,12 +757,12 @@ footer {
 }
 
 
-@media only screen and (min-width: 641px) {
-
+@media only screen and (min-width: 641px)
+{
   header {
    text-align: unset;
    padding: 20px 0 13px;
- }
+  }
 
  nav {
    width: auto;
@@ -717,3 +782,4 @@ footer {
  .navtoggle li:last-child {
    display: none;
  }
+}
