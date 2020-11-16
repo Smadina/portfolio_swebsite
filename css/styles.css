@@ -209,7 +209,6 @@ background-color: rgba(187, 159, 6, 0.2);
   border-bottom: 0;
   padding-bottom: 8px;
   text-decoration: none;
-  animation: move 12s linear infinite;
   -webkit-animation: intro-wave 12s linear infinite;
 }
 
@@ -319,12 +318,12 @@ background-color: rgba(187, 159, 6, 0.2);
   width: 35%;
 }
 
-.about-left-text,
-.about-left-text span {
-  font-family: 'roc-grotesk-wide', sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 46px;
+.about-text,
+.about-text span {
+  color: #333;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 52px;
   padding: 30px 0 30px 0;
   letter-spacing: 0.6px;
 }
@@ -340,8 +339,8 @@ background-color: rgba(187, 159, 6, 0.2);
   background-repeat: repeat-x;
   background-size: 28px 8px;
   border-bottom: 0;
+  padding-top: 20px !important;
   text-decoration: none;
-  animation: move 12s linear infinite;
   -webkit-animation: about-wave 12s linear infinite;
 }
 
@@ -349,6 +348,8 @@ background-color: rgba(187, 159, 6, 0.2);
   from {background-position: 0px 58px;}
   to {background-position: 500px 58px;}
 }
+
+
 
 .about-right,
 .about-right-list {
@@ -438,12 +439,12 @@ footer {
 }
 
 #Layer_1 svg {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
 }
 
 #_x3C_background_x3E_{
-  animation: bkg 10s alternate infinite;
-  animation-timing-function:ease-in-out;
+  -webkit-animation: bkg 10s alternate infinite;
+  -webkit-animation-timing-function:ease-in-out;
 }
 
 @keyframes bkg {
@@ -453,18 +454,19 @@ footer {
 
 #_x3C_sun_x3E_ {
   position: relative;
-  animation: sun 10s alternate infinite;
-  animation-timing-function: ease-in-out;
+  -webkit-animation: sun 10s alternate infinite;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 @keyframes sun {
-  from {bottom: 0px;}
-  to {bottom: 120px;}
+
+  from {transform: translateY(0);}
+  to {transform: translateY(100px);}
 }
 
 #color-change-1 {
-  animation: color-change-1 10s alternate infinite;
-  animation-timing-function: ease-in-out;
+  -webkit-animation: color-change-1 10s alternate infinite;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 @keyframes color-change-1 {
@@ -475,8 +477,8 @@ footer {
 }
 
 #color-change-2 {
-  animation: color-change-2 10s alternate infinite;
-  animation-timing-function: ease-in-out;
+  -webkit-animation: color-change-2 10s alternate infinite;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 @keyframes color-change-2 {
@@ -487,8 +489,8 @@ footer {
 }
 
 #color-change-3 {
-  animation: color-change-3 10s alternate infinite;
-  animation-timing-function: ease-in-out;
+  -webkit-animation: color-change-3 10s alternate infinite;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 @keyframes color-change-3 {
@@ -500,7 +502,7 @@ footer {
 
 #_x3C_cloud-3_x3E_{
   position: relative;
-  animation: cloud3 10s alternate infinite;
+  -webkit-animation: cloud3 10s alternate infinite;
 }
 
 @keyframes cloud3 {
@@ -510,8 +512,8 @@ footer {
 
 #_x3C_cloud-4_x3E_{
   position: relative;
-  animation: cloud4 11s alternate infinite;
-  animation-delay: 0.5s;
+  -webkit-animation: cloud4 11s alternate infinite;
+  -webkit-animation-delay: 0.5s;
 }
 
 @keyframes cloud4 {
@@ -521,7 +523,7 @@ footer {
 
 #_x3C_cloud-2_x3E_ {
   position: relative;
-  animation: cloud2 10s alternate infinite;
+  -webkit-animation: cloud2 10s alternate infinite;
 }
 
 @keyframes cloud2 {
@@ -531,8 +533,8 @@ footer {
 
 #_x3C_cloud-5_x3E_ {
   position: relative;
-  animation: cloud5 11s alternate infinite;
-  animation-delay: 0.5s;
+  -webkit-animation: cloud5 11s alternate infinite;
+  -webkit-animation-delay: 0.5s;
 }
 
 @keyframes cloud5 {
@@ -542,7 +544,7 @@ footer {
 
 #_x3C_cloud-1_x3E_ {
   position: relative;
-  animation: cloud1 10s alternate infinite;
+  -webkit-animation: cloud1 10s alternate infinite;
 }
 
 @keyframes cloud1 {
